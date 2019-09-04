@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <title></title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+  <!--<script type="text/javascript" src="https://api.map.baidu.com/api?ak=z6mqDKyNg4cGp6QhlicQh3ILgmUpNMq1&v=2.0&services=false"></script>-->
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+  <!--<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.3&key=89205174dde5266e88bdf0efba827362"></script>-->
+  <!--<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>-->
+  <!--<script type="text/javascript" src="https://apis.map.qq.com/tools/geolocation/min?key=OUIBZ-G57KX-XD54B-ZH4FF-UFYFV-BVBQY&referer=myapp"></script>-->
+  <script type="text/javascript" src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script>
+  <script>
+    // console.log(returnCitySN["cip"]+','+returnCitySN["cname"]);
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+      }, false);
+    }
+    if(!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+    }
+
+    window.QQ= qq.maps;
+    // var geolocation = new qq.maps.Geolocation("OUIBZ-G57KX-XD54B-ZH4FF-UFYFV-BVBQY", "myapp");
+    // geolocation.getLocation(showPosition, showErr, options);
+    // var positionNum = 0;
+    // var options = {timeout: 8000};
+    // function showPosition(position) {
+    //   window.addressName=position.province+'/'+position.city
+    // };
+    //
+    // function showErr(err) {
+    //   positionNum ++;
+    //   window.addressName="定位失败";
+    // };
+
+  </script>
+</head>
+<body>
+<div id="root"></div>
+<script src="index.js"></script>
+</body>
+</html>
